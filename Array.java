@@ -10,7 +10,6 @@ public class Array <T extends Comparable<T>>{
     public  T Maximum(){
         return Array.maximum(value_1,value_2,value_3);
     }
-
     public static <T extends Comparable<T>> T maximum(T value_1, T value_2, T value_3){
         T max = value_1;
         if(value_2.compareTo(max)>0){
@@ -26,7 +25,6 @@ public class Array <T extends Comparable<T>>{
     public static  <T> void toPrint( T value_1, T value_2, T value_3){
         System.out.println("max value :"+value_1+" "+value_2+" "+ value_3+ " " );
     }
-
     public static void main(String[] args) {
         Array  array_1 =new Array(10,2000,200);
         Array  array_2 =new Array(10.2,20.4,11.6);
@@ -34,8 +32,5 @@ public class Array <T extends Comparable<T>>{
         System.out.println(array_1.Maximum());
         System.out.println(array_2.Maximum());
         System.out.println(array_3.Maximum());
-
-
     }
-
 }
