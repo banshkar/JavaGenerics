@@ -17,10 +17,18 @@ public class Array{
         }
         return max;
     }
-
+    public static String maximumValue(String[]array){
+        String max = array[0];
+        for(int index = 0; index<array.length; index++){
+            if(array[index].length()>max.length()){
+                max =array[index];
+            }
+        }
+        return max;
+    }
     public static void main(String[] args) {
-      Double[]doubles = {80.5,26.5,50.3};
-       Double max = Array.maximumValue(doubles);
-        System.out.println("the maximum Value :"+ max);
+      String[]strings ={"rahul","jitendra","sonu"};
+      String max = Array.maximumValue(strings);
+        System.out.println("the maximum String is : "+ max);
     }
 }
